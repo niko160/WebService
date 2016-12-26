@@ -3,15 +3,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PartyInvites.Models;
 
 namespace PartyInvites.Controllers
 {
     public class HomeController : Controller
     {
         // GET: Home
-        public string Index()
+        public ViewResult Index()
         {
-            return "Witaj, swiecie!";
+            int hour = DateTime.Now.Hour;
+            ViewBag.Greeting = hour < 17 ? "Dzień dobry" : "Dobry wieczór";
+            return View();
+        }
+
+        [HttpGet]
+        public ViewResult RsvpForm()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult RsvpForm(GuestResponse guestResponse)
+        {
+            if (ModelState.IsValid)
+            {
+                // TO DO : wyślij zawartośc guestResponse do organizatora przyjęcia
+                return View("Thanks", guestResponse);
+            }
+            else
+            {
+                return View();
+            }
         }
     }
 }

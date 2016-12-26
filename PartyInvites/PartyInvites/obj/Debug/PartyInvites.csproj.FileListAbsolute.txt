@@ -41,6 +41,5 @@ C:\Repo\AplikacjeWeb\PartyInvites\PartyInvites\bin\System.Web.Webpages.Deploymen
 C:\Repo\AplikacjeWeb\PartyInvites\PartyInvites\bin\System.Web.Webpages.Razor.xml
 C:\Repo\AplikacjeWeb\PartyInvites\PartyInvites\bin\System.Web.Helpers.xml
 C:\Repo\AplikacjeWeb\PartyInvites\PartyInvites\bin\System.Web.Mvc.xml
-C:\Repo\AplikacjeWeb\PartyInvites\PartyInvites\obj\Debug\PartyInvites.csprojResolveAssemblyReference.cache
 C:\Repo\AplikacjeWeb\PartyInvites\PartyInvites\obj\Debug\PartyInvites.dll
 C:\Repo\AplikacjeWeb\PartyInvites\PartyInvites\obj\Debug\PartyInvites.pdb
